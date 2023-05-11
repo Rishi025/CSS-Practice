@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: black;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .banner{
+            height:300px;
+            width:600px;
+            margin:100px auto;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            position:relative;
+        }
+        .bg1{
+            background:url("bottom2.jpg");
+            background-size:cover;
+            background-position: -20px 0px;
+            border:20px solid rgba(0, 0, 0, 0.302);
+            background-origin: border-box;
+        }
+        .banner:hover{
+            background-position: 0px ,0px;
+        }
+        .effect{
+            height:200px;
+            width:85%;
+            /* background:grey; */
+            border:4px solid white;
+            padding: 120px 0 0 250px;
+            color:white;
+            font-size:25px;
+            letter-spacing: 5px;
+            font-family:cursive;
+            opacity:0;
+            transition:0.3s;
+            transform: translateX(-20px);
+        }
+        .banner:hover .effect{
+            opacity:1;
+            transform: translate(0px);
+        }
+        p{
+            color:white;
+            position:absolute;
+            font-size:25px;
+            font-family:cursive;
+            top:45%;
+            left:62%;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner bg1">
+        <p><span style="color:red;">F</span>ALL AHEAD</p>
+
+        <div class="effect">New Arrivals</div>
+    </div>
+</body>
+</html>

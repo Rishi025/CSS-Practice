@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .banner{
+            height:300px;
+            width:600px;
+            margin:100px auto;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            position:relative;
+        }
+        .bg1{
+            background:url("bottom4.jpg");
+            background-size:cover;
+            background-position:-20px,0;
+            border: 10px solid rgba(0, 0, 0, 0.241);
+            background-origin: border-box;
+        }
+        .banner:hover{
+            background-position:0px,0;
+        }
+        .effect{
+            height:200px;
+            width:85%;
+            /* background:gray; */
+            border:4px solid white;
+            color:white;
+            padding: 120px 0 0 370px;
+            font-size:15px;
+            letter-spacing:5px;
+            font-family:cursive;
+            opacity:0;
+            transition:0.8s;
+
+        }
+        .banner:hover .effect{
+            opacity:1;
+        }
+        p{
+            color:white;
+            font-size:15px;
+            position:absolute;
+            top:45%;
+            left:80%;
+            letter-spacing:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner bg1">
+        <p><span style="color:red;">S</span>ALE</p>
+        <div class="effect">Upto 65%</div>
+    </div>
+</body>
+</html>

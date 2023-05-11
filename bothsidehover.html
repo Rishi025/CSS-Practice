@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height:300px;
+            width:500px;
+            margin:100px auto;
+            position:relative;
+            overflow:hidden;
+        }
+        .bg1{
+            background:url("bottom\ 5.jpg");
+            background-size: 100% 100%;
+        }
+        .sub1{
+            height:300px;
+            width:100%;
+            background:rgba(0, 0, 0, 0.194);
+            position:absolute;
+            top:100%;
+            left:-85%;
+            transition:1s;
+        }
+        .main:hover .sub1{
+            top:0%;
+            left:0%;
+        }
+        .sub2{
+            height:300px;
+            width:100%;
+            background:rgba(0, 0, 0, 0.194);
+            position:absolute;
+            top:-100%;
+            left:85%;
+            transition:1s;
+        }
+        .main:hover .sub2{
+            top:0%;
+            left:0%;
+        }
+        p{
+            color:white;
+            font-size:25px;
+            text-align:center;
+            line-height:300px;
+            letter-spacing:8px;
+            font-family:cambria;
+        }
+    </style>
+</head>
+<body>
+    <div class="main bg1">
+        <p>Flat <span style="color:rgb(5, 223, 100);">50%</span> offer</p>
+        <div class="sub1"></div>
+        <div class="sub2"></div>
+    </div>
+</body>
+</html>

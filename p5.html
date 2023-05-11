@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height:300px;
+            width:500px;
+            background:url("bottom\ 5.jpg");
+            margin:100px auto;
+            position:relative;
+            overflow:hidden;
+        }
+        .sub1{
+            height:300px;
+            width:500px;
+            background: rgba(0, 0, 0, 0.122);
+            position:absolute;
+            top:100%;
+            left:-100%;
+            transition:1s;
+        }
+        .main:hover .sub1{
+            top:0;
+            left:0;
+        }
+        .sub2{
+            height:300px;
+            width:500px;
+            background: rgba(0, 0, 0, 0.122);
+            position:absolute;
+            top:-100%;
+            left:100%;
+            transition:1s;
+        }
+        .main:hover .sub2{
+            top:0;
+            left:0;
+        }
+        p{
+            color:white;
+            text-align:center;
+            line-height:300px;
+            font-size:25px;
+            font-weight:bold;
+            letter-spacing:8px;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <p>SALE <span style="color:seagreen">50%</span>OFF</p>
+    <div class="sub1"></div>
+    <div class="sub2"></div>
+   </div> 
+</body>
+</html>

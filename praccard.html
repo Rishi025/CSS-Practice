@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            /* height:350px; */
+            width:200px;
+            background:rgb(11, 230, 98);
+            border:2px solid;
+            margin:100px auto;
+            text-align:center;
+            line-height:50px;
+            
+            position:relative;
+        }
+        .prdimg{
+            /* height:250px; */
+            width:200px;
+            background:lightblue;
+        }
+        .prdquickview{
+            /* height:50px; */
+            width:200px;
+            background:black;
+            color:white;
+            position:absolute;
+            top:0;
+            left:0;
+            transition:1s;
+            opacity:0;
+            text-transform:uppercase;
+
+        }
+        .main:hover .prdquickview{
+            top:200px;
+            opacity:1;
+        }
+        .prdinfo{
+
+        }
+        p{
+            margin:0;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="prdimg">
+            <img src="m2.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="prdquickview">
+            Quick view
+        </div>
+        <div class="prdinfo">
+            <p style="color:red;"> Gabi Full Sleeve Shirt</p>
+            <p>$45.99 <span style="color:grey;">$69.71</span></p>
+            <button>Add to Cart</button>
+
+        </div>
+    </div>
+</body>
+</html>

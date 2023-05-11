@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height:300px;
+            width:600px;
+            background:url("bot_2.jpg");
+            background-size: 100% 100%;
+            margin:100px auto;
+            /* padding: 150px 0 0 150px; */
+            position:relative;
+            overflow: hidden;
+        }
+        p{
+            color:white;
+            font-size:30px;
+            letter-spacing: 8px;
+            padding: 150px 0 0 150px;
+          
+        }
+        .sub1{
+            height:300px;
+            width:600px;
+            background:rgba(0, 0, 0, 0.1);
+            
+            position:absolute;
+            top: 100%;
+            left:-100%;
+            transition:1s;
+           
+        }
+        .sub2{
+            height:300px;
+            width:600px;
+            background:rgba(0, 0, 0, 0.1);
+            
+            position:absolute;
+            top: -100%;
+            left:100%;
+            transition:1s;
+        }
+        .main:hover .sub1{
+            top:0;
+            left:0;
+           
+            }
+            .main:hover .sub2{
+            top:0;
+            left:0;
+           
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p>Flat <span style="color:lightseagreen">50%</span> offer</p>
+        <div class="sub1"></div>
+        <div class="sub2"></div>
+    </div>
+</body>
+</html>

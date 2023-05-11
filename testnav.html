@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+       
+        width:500px;
+        background:skyblue;
+        text-align:center;
+        line-height:20px;
+    }
+    li{
+        display:inline-block;
+        margin-right:30px;
+        position:relative;
+    }
+    a{
+        text-decoration:none;
+        background:linear-gradient(lightgreen,lightcoral);
+        color:rgb(0, 0, 0);
+        font-size:20px;
+        font-weight:bold;
+    }
+    .line{
+        height:5px;
+        width:0px;
+        background:seagreen;
+        position:absolute;
+        top:100%;
+        left:0;
+        transition:1s;
+    }
+    li:hover .line{
+        width:100%;
+    }
+    .home{
+        height:5px;
+        width:100%;
+        background:seagreen;
+    }
+   </style>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <li><a href="">Home</a><div class="home"></div></li>
+            <li><a href="">About</a><div class="line"></div></li>
+            <li><a href="">Services</a><div class="line"></div></li>
+            <li><a href="">Career</a><div class="line"></div></li>
+            <li><a href="">Contact</a><div class="line"></div></li>
+        </ul>
+    </div>
+</body>
+</html>

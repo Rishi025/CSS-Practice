@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            color:white;
+            text-decoration:none;
+        }
+       
+        .x{
+            height:100px;
+            width:300px;
+            background:black;
+            color:white;
+            word-spacing: 30px;
+            font-size:16px;
+            font-weight:bold;
+            font-family:sans-serif;
+            margin:100px auto;
+            line-height:100px;
+            overflow:hidden;
+            position:relative;
+
+
+
+        }
+        .x::after{
+            content: "";
+            height:20px;
+            width:50px;
+            background:cyan;
+            position:absolute;
+            top:95px;
+            left:-100%;
+            transition:1s;
+        }
+        .x:hover::after{
+            left:0;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="x">
+        <a href="Home">Home</a>
+        <a href="About">About</a>
+        <a href="Contact">Contact</a>
+        <a href="Help">Help</a>
+        
+       
+    </div>
+
+   </div>   
+</body>
+</html>
+
+        

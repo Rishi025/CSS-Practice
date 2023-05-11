@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 300px;
+            width: 500px;
+            background:url("bottom1.jpg");
+           
+             margin:100px auto;
+            /* position:relative;  */
+            transition: 1s;
+        }
+        .x{
+            height:200px;
+            width:410px;
+            background:rgba(0, 0, 0, 0.339);
+            transform:translate(50px,50px);
+            font-size:22px;
+            color:transparent;
+            font-family:arial;
+            text-align:right;
+            padding: 70px 30px 0 0;
+            line-height:40px;
+            
+            /* position:absolute;
+            top:0;
+            left:0;
+             */
+           
+        }
+        
+        .main:hover{
+            background-position: -50% -50%;
+             
+        }
+        .main:hover .x{
+            border: 3px solid white;
+            color:white;
+            font-size:30px;
+            font-family:arial;
+            text-align:center;
+            /* word-spacing:15px; */
+        }
+       
+      
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="x"><span style="color:red">F</span><span style="color:white">ALL AHEAD</span> <br>New Arrivals</div>
+        
+    </div>
+</body>
+</html>
